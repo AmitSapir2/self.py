@@ -1,0 +1,132 @@
+
+def check_valid_letter(letter_guessed, old_letters_guessed): 
+    """
+    this function checks the validity of the letter_guessed and previews guseed letters-old_letters_guessed
+    :params letter_gussed:current input letter, old_letters_guessed:old inputs
+    :type string, list
+    :return validity of the input and if the the user guessed the letter already
+    :rtype bool
+    """
+    if not letter_guessed.isalpha():
+        return False
+    elif len(letter_guessed)>1:
+        return False
+    elif letter_guessed in old_letters_guessed:
+        return False
+    else:
+        return True
+
+def main():
+    letter=input ("write a letter: \n")
+    print(check_valid_letter(letter,old_letters))
+    farwell=input("farwell!")
+
+if __name__ == "__main__":
+    main()
+
+word=input("write a word: \n")
+if (len(word)>1):
+    print("E1")
+elif (word.isalpha()==0):
+    print("E2")
+elif (len(word) and word.isalpha()==0):
+    print("E3")
+else:
+    print("_ "* len(word))
+
+
+
+
+letter=input("Guess a Letter: \n")
+print(letter.lower())
+
+
+
+
+
+
+>>> letter=input("Guess a Letter: \n")
+print(letter)
+
+
+
+HANGMAN_ASCII_ART="""
+  _    _                                         
+ | |  | |                                        
+ | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
+ |  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+ | |  | | (_| | | | | (_| | | | | | | (_| | | | |
+ |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                      __/ |                      
+                     |___/ """
+MAX_TRIES=6
+
+ print(" Welcome to the game Hangman\n",HANGMAN_ASCII_ART,"\n",MAX_TRIES)
+
+
+
+
+
+
+
+
+print("Welcome to the game Hangman ")
+>>> print("""\
+...   _    _
+...  | |  | |
+...  | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __
+...  |  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \
+...  | |  | | (_| | | | | (_| | | | | | | (_| | | | |
+...  |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+...                       __/ |
+...                      |___/ """)
+					 
+
+print("x-------x")
+print("""
+    x-------x
+    |
+    |
+    |
+    |
+    | """)
+
+print("""
+    x-------x
+    |       |
+    |       0
+    |
+    |
+    | """)
+	
+print("""
+    x-------x
+    |       |
+    |       0
+    |       |
+    |
+    | """)
+	
+print("""
+    x-------x
+    |       |
+    |       0
+    |      /|\
+    |
+    | """)
+	
+print("""
+    x-------x
+    |       |
+    |       0
+    |      /|\
+    |      /
+    | """)
+	
+print("""
+    x-------x
+    |       |
+    |       0
+    |      /|\
+    |      / \
+    | """)
